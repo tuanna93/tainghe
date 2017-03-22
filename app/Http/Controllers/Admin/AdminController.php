@@ -133,4 +133,5 @@ class AdminController extends Controller
         }
         return redirect('/admin/options.html')->with(['flash_message'=>'Cập nhật cấu hình thành công','flash_level'=>'success']);
     }
+
 }

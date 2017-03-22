@@ -203,7 +203,7 @@ if(!function_exists('cate_parent')){
                 }else{
                     echo "<option value='$id'>$str $name</option>";
                 }
-                cate_parent($data,$id,$str."--");
+                cate_parent($data,$id,$str."--",$select);
             }
 
         }
@@ -246,8 +246,81 @@ if(!function_exists('get_price_product')) {
     }
 }
 if(!function_exists('get_menu_admin')) {
-    function get_menu_admin($data,$id){
+    function get_menu_admin($data,$parent=0,$str=""){
+        $stt = 0;
         foreach($data as $menu){
+            if($menu->parent_id == $parent){
+                echo "<tr>";
+                echo "<td>".$str.check_parent_sub($parent)." ".$menu->name."</td>";
+                echo check_icon_menu($menu);
+                echo "<td>".get_parent_menu($menu->parent_id)."</td>";
+                echo "<td>".get_position_menu($menu->position)."</td>";
+                echo "<td>".$menu->sort_order."</td>";
+                echo "<td>".check_status_active($menu->status)."</td>";
+                echo "<td>";
+                echo "<a href='/admin/menu/edit/".$menu->id."' class='btn btn-primary btn-xs'><i class='fa fa-folder'></i> Sửa</a>";
+                echo "<a href='/admin/menu/delete/".$menu->id."' class='btn btn-warning btn-xs'><i class='fa fa-trash'></i> Xóa</a>";
+                echo "</td>";
+                echo "</tr>";
+                get_menu_admin($data,$menu->id,'--'.$str);
+
+            }
+        }
+    }
+}
+if(!function_exists('get_parent_menu')) {
+    function get_parent_menu($parent){
+        $parent_name = \App\Menu::where('id',$parent)->first();
+        if($parent_name){
+            return $parent_name->name;
+        }
+        else{
+            return "NONE";
+        }
+    }
+}
+if(!function_exists('get_position_menu')) {
+    function get_position_menu($position){
+        if($position == 1){
+            return "Menu trên";
+        }
+        if($position == 2){
+            return "Menu dưới";
+        }
+    }
+}
+if(!function_exists('check_parent_sub')) {
+    function check_parent_sub($parent){
+        if($parent == 0){
+            return "<img src='/images/images_icon/Speerio_folderopen_edit.gif'>";
+        }
+        else{
+            return "<img src='/images/images_icon/sub.gif'>";
+        }
+    }
+}
+if(!function_exists('check_icon_menu')) {
+    function check_icon_menu($menu){
+        if($menu->icon){
+            return "<td><img src='".$menu->icon."' alt='".$menu->name."' class='img_pro'/></td>";
+        }else{
+            return "<td><span class=\"label label-danger\">Không có icon</span></td>";
+        }
+    }
+}
+if(!function_exists('menu_parent')){
+    function menu_parent($data,$parent=0,$str='--',$select=0){
+        foreach($data as $menu){
+            $id = $menu->id;
+            $name = $menu->name;
+            if($menu->parent_id == $parent){
+                if($select != 0 && $id == $select){
+                    echo "<option value='$id' selected='selected'>$str $name</option>";
+                }else{
+                    echo "<option value='$id'>$str $name</option>";
+                }
+                menu_parent($data,$id,$str."--");
+            }
 
         }
     }

@@ -61,13 +61,13 @@
                            <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12">Hiển thị tab trang chủ</label>
                                     <div class="col-md-3 col-sm-9 col-xs-12">
-                                    <input type="checkbox" name="is_tab" <?php if($onepage->status == 1 ) echo "checked"?>>
+                                    <input type="checkbox" name="is_tab" <?php if($cate->status == 1 ) echo "checked"?>>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12">Kích hoạt</label>
                                     <div class="col-md-3 col-sm-9 col-xs-12">
-                                    <input type="checkbox" name="status" <?php if($onepage->status == 1 ) echo "checked"?>>
+                                    <input type="checkbox" name="status" <?php if($cate->status == 1 ) echo "checked"?>>
                                     </div>
                                     </div>
                           <div class="ln_solid"></div>

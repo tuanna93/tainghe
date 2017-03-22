@@ -96,7 +96,7 @@
                                         <option value="1" <?php if($product->status_sale == 1 ) echo "selected='selected'" ?>>BEST</option>
                                         <option value="2" <?php if($product->status_sale == 2 ) echo "selected='selected'" ?>>NEW</option>
                                         <option value="3" <?php if($product->status_sale == 3 ) echo "selected='selected'" ?>>HOT</option>
-                                        <option value="4" selectedselected>SALE</option>
+                                        <option value="4" <?php if($product->status_sale == 4 ) echo "selected='selected'" ?>>SALE</option>
                                     </select>
                                 </div>
                             </div>

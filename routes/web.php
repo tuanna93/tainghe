@@ -78,8 +78,17 @@ Route::group(['prefix' => 'admin','middleware'=>'auth'], function () {
         Route::get('accept/{id}','Admin\\OrderController@accept');
         Route::get('delete/{id}','Admin\\OrderController@getDelete');
     });
+    Route::group(['prefix' => 'menu'], function () {
+        Route::get('list.html','Admin\\MenuController@getList');
+        Route::get('add.html','Admin\\MenuController@getAdd');
+        Route::post('add.html','Admin\\MenuController@postAdd');
+        Route::get('edit/{id}','Admin\\MenuController@getEdit');
+        Route::post('edit/{id}','Admin\\MenuController@postEdit');
+        Route::get('delete/{id}','Admin\\MenuController@getDelete');
+    });
     Route::get('options.html','Admin\\AdminController@getOption');
     Route::post('options.html','Admin\\AdminController@postOption');
+    Route::get('loadkieutrang-{id}','Admin\\MenuController@loadkieutrang');
     Route::get('logout.html','Auth\\LoginController@logout');
 });
 Auth::routes();

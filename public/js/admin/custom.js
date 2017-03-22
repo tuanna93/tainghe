@@ -4,3 +4,15 @@ function xacnhanxoa(msg){
     }
     return false;
 }
+$(document).ready(function(){
+    $('#kieutrang').change(function(){
+        $id = $(this).val();
+        $.ajax({
+            url : "/admin/loadkieutrang-"+$id,
+            method : "get",
+            success: function($data){
+                $('#loadkieutrang').html($data);
+            }
+        });
+    });
+});

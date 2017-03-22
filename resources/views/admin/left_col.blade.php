@@ -56,8 +56,8 @@
                      </li>
                     <li><a><i class="fa fa-th-list"></i> Quản trị menu <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="/admin/product/add.html">Thêm</a></li>
-                            <li><a href="/admin/product/list.html">Danh sách</a></li>
+                            <li><a href="/admin/menu/add.html">Thêm</a></li>
+                            <li><a href="/admin/menu/list.html">Danh sách</a></li>
                         </ul>
                     </li>
                     <li><a><i class="fa fa-cart-arrow-down"></i> Quản trị đơn hàng <span class="fa fa-chevron-down"></span></a>

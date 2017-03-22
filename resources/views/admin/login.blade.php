@@ -36,6 +36,15 @@
               <div>
                 <input name="password" type="password" class="form-control" placeholder="Mật khẩu" required="" />
               </div>
+              <div class="form-group">
+                  <div class="col-md-6">
+                      <div class="checkbox">
+                          <label>
+                              <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : ''}}> Remember Me
+                          </label>
+                      </div>
+                  </div>
+              </div>
               <div>
                 <button class="btn btn-default submit" type="submit">Đăng nhập</button>
               </div>

@@ -21,6 +21,8 @@ class CreateMenusTable extends Migration
             $table->integer('sort_order');
             $table->integer('parent_id');
             $table->boolean('position')->default(1);
+            $table->boolean('cate_id')->default(1);
+            $table->integer('type_page')->default(0);
             $table->boolean('status')->default(1);
             $table->timestamps();
         });
