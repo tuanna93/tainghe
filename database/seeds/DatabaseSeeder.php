@@ -29,5 +29,6 @@ class DatabaseSeeder extends Seeder
             ['name' => 'description','value' => ''],
             ['name' => 'h1','value' => '']
         ]) ;
+        DB::table('user_admins')->insert(['name'=>'admin','email'=>'admin@admin.vn','password'=>'$2y$10$QaHAgzUPJt0W4ZDkHl5XcegvwDdoG2jPYHQuvj/3dXofbnaj.SLdG','level'=>'9']);
     }
 }
