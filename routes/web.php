@@ -28,6 +28,7 @@ Route::post('/cart/mua-hang.html','ProductController@buy_detail');
 Route::get('/gio-hang.html','ProductController@cart');
 Route::get('/thanh-toan.html','ProductController@getcheckout');
 Route::post('/thanh-toan.html','ProductController@postcheckout');
+Route::get('/tim-kiem','HomeController@search');
 Route::get('/{page}.html','HomeController@Page');
 
 Route::group(['prefix' => 'admin','middleware'=>'auth'], function () {
@@ -85,6 +86,14 @@ Route::group(['prefix' => 'admin','middleware'=>'auth'], function () {
         Route::get('edit/{id}','Admin\\MenuController@getEdit');
         Route::post('edit/{id}','Admin\\MenuController@postEdit');
         Route::get('delete/{id}','Admin\\MenuController@getDelete');
+    });
+    Route::group(['prefix' => 'adv'], function () {
+        Route::get('list.html','Admin\\AdvController@getList');
+        Route::get('add.html','Admin\\AdvController@getAdd');
+        Route::post('add.html','Admin\\AdvController@postAdd');
+        Route::get('edit/{id}','Admin\\AdvController@getEdit');
+        Route::post('edit/{id}','Admin\\AdvController@postEdit');
+        Route::get('delete/{id}','Admin\\AdvController@getDelete');
     });
     Route::get('options.html','Admin\\AdminController@getOption');
     Route::post('options.html','Admin\\AdminController@postOption');

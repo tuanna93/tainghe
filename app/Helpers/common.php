@@ -325,3 +325,28 @@ if(!function_exists('menu_parent')){
         }
     }
 }
+if(!function_exists('get_menu_bottom')){
+    function get_menu_bottom(){
+        $menu_bottom = \App\Menu::where('position',2)->where('parent_id',0)->where('status',1)->orderBy('sort_order','ASC')->get();
+        return $menu_bottom;
+    }
+}
+if(!function_exists('get_menu_bottom_sub')){
+    function get_menu_bottom_sub($parent_id){
+        $menu_bottom_sub = \App\Menu::where('parent_id',$parent_id)->get();
+        return $menu_bottom_sub;
+    }
+}
+if(!function_exists('check_position_adv')){
+    function check_position_adv($position){
+        if($position == 1){
+            return "<span class=\"label label-info\">Banner</span>";
+        }
+        elseif($position == 2){
+            return "<span class=\"label label-info\">Quảng cáo trên</span>";
+        }
+        elseif($position == 3){
+            return "<span class=\"label label-info\">Quảng cáo dưới</span>";
+        }
+    }
+}

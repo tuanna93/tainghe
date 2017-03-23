@@ -60,6 +60,12 @@
                             <li><a href="/admin/menu/list.html">Danh sách</a></li>
                         </ul>
                     </li>
+                    <li><a><i class="fa fa-credit-card"></i> Quản trị quảng cáo <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                            <li><a href="/admin/adv/add.html">Thêm</a></li>
+                            <li><a href="/admin/adv/list.html">Danh sách</a></li>
+                        </ul>
+                    </li>
                     <li><a><i class="fa fa-cart-arrow-down"></i> Quản trị đơn hàng <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
                             <li><a href="/admin/order/list.html">Danh sách</a></li>

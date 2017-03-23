@@ -30,7 +30,7 @@
                             </div>
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Tên sản phẩm</label>
-                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                <div class="col-md-3 col-sm-9 col-xs-12">
                                     <input type="text" class="form-control" name="name" placeholder="Nhập tại đây ..." value="{!! old('name',isset($product) ? $product->name : '') !!}">
                                 </div>
                             </div>

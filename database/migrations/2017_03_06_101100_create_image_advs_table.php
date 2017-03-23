@@ -17,7 +17,7 @@ class CreateImageAdvsTable extends Migration
             $table->increments('id');
             $table->string('image');
             $table->string('slug');
-            $table->integer('position')->default(null);
+            $table->integer('position')->default(1);
             $table->string('content')->default(null);
             $table->integer('width')->default(0);
             $table->integer('height')->default(0);

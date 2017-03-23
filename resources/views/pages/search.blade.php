@@ -4,6 +4,6 @@
 @section('title',isset($title) ? $title : page_get_option('title'))
 @section('content')
 
-    @include('widgets.main.pages.product.detail')
+    @include('widgets.main.pages.search')
 
 @endsection

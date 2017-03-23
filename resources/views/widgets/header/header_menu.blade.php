@@ -5,7 +5,7 @@
                 <div id="sp-main-menu" class="visible-desktop">
                     <ul class="sp-menu level-0">
                         <?php
-                            $menu = \App\Menu::where('parent_id',0)->get();
+                            $menu = \App\Menu::where('parent_id',0)->where('position',1)->where('status',1)->get();
                         ?>
                         @foreach($menu as $menu_1)
 

@@ -127,7 +127,7 @@
                                                 <div class="image">
                                                     <div class="image_block">
                                                         <div class="product_label">
-                                                            {!! check_image_sale($pro->status_sale) !!}}
+                                                            {!! check_image_sale($pro->status_sale) !!}
                                                         </div>
                                                         <a class="images" href="{{ $pro->slug }}.html">
                                                             <img class="jshop_img single-image" src="/images/images_pro/{{ $pro->image }}" alt="{{ $pro->name }}" title="{{ $pro->name }}" draggable="false">

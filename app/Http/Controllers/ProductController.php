@@ -17,17 +17,22 @@ class ProductController extends Controller
         return view('pages.product.index',compact('product'));
     }
     public function cate($slug){
-        $cate_id = Category::where('slug',$slug)->first()->id;
+        $cate = Category::where('slug',$slug)->first();
+        $cate_id = $cate->id;
+        $keywords = $cate->keywords;
+        $description = $cate->description;
         $product = Product::select('*')->where('cate_id',$cate_id)->paginate(12);
-        if($product->count() >0){
-            return view('pages.product.index',compact('product'));
+        if($cate->count()){
+            return view('pages.product.index',compact('product','description','keywords'));
         }else{
             return redirect('/')->with(['flash_level'=>'danger','flash_message'=>'Danh mục không tồn tại']);
         }
     }
     public function pro($pro){
         $detail = Product::where('slug','like','%'.$pro.'%')->first();
-        return view('pages.product.detail',compact('detail'));
+        $keywords = $detail->keywords;
+        $description = $detail->description;
+        return view('pages.product.detail',compact('detail','keywords','description'));
     }
     public function cart_insert_product($id,$slug){
         $pro = Product::where('id',$id)->first();

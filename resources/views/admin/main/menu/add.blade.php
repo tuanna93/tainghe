@@ -76,6 +76,13 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Nội dung menu dưới( nếu có )</label>
+                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                    <textarea name="contents" class="form-control" rows="3"></textarea>
+                                    <script type="text/javascript">CKEDITOR.replace('contents')</script>
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Kích hoạt</label>
                                 <div class="col-md-3 col-sm-9 col-xs-12">
                                     <input type="checkbox" name="status" checked>

@@ -9,7 +9,7 @@
             </div>
             <div id="sp-advanced-search" class="span5">
                 <div class="jshop_ajaxsearch">
-                    <form name="searchForm" method="post" action="/tim-kiem.html">
+                    <form name="searchForm" method="get" action="/tim-kiem">
                         <input type="text" class="inputbox" name="search" id="jshop_search" value="">
                         <input class="button" type="submit" value="Tìm kiếm"> </form>
                     <div id="search-result"></div>

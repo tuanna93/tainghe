@@ -4,6 +4,7 @@
         <div class="row">
             <div class="col-md-12 col-xs-12">
                 @include('block.error')
+                @include('block.message')
                 <div class="x_panel">
                     <div class="x_title">
                         <h2>Sửa menu <small>{{ $menu->name }}</small></h2>
@@ -88,6 +89,13 @@
                                         <option value="1" <?php if($menu->position == 1) echo "selected='selected'" ?>>Menu trên</option>
                                         <option value="2" <?php if($menu->position == 2) echo "selected='selected'" ?>>Danh dưới</option>
                                     </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Nội dung menu dưới( nếu có )</label>
+                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                    <textarea name="contents" class="form-control" rows="3">{!! old('icon',isset($menu) ? $menu->content : '') !!}</textarea>
+                                    <script type="text/javascript">CKEDITOR.replace('contents')</script>
                                 </div>
                             </div>
                             <div class="form-group">

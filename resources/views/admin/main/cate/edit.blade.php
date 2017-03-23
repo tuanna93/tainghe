@@ -20,7 +20,7 @@
                             {!! csrf_field() !!}
                           <div class="form-group">
                               <label class="control-label col-md-3 col-sm-3 col-xs-12">Danh mục cha</label>
-                              <div class="col-md-9 col-sm-9 col-xs-12">
+                              <div class="col-md-3 col-sm-9 col-xs-12">
                                 <select class="form-control" name="parent_id">
                                   <option value="0">Danh mục cha</option>
                                   {!! cate_parent($parent,0,"--",$cate->parent_id) !!}
@@ -29,7 +29,7 @@
                             </div>
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Tên danh mục</label>
-                            <div class="col-md-9 col-sm-9 col-xs-12">
+                            <div class="col-md-3 col-sm-9 col-xs-12">
                               <input type="text" class="form-control" name="name" placeholder="Nhập tại đây ..." value="{!! old('name',isset($cate) ? $cate->name : '') !!}">
                             </div>
                           </div>
@@ -42,7 +42,7 @@
                             <div class="form-group">
                               <label class="control-label col-md-3 col-sm-3 col-xs-12">Hình ảnh</label>
                               <div class="col-md-3 col-sm-9 col-xs-12">
-                                <input type="text" class="form-control" name="icon" id="ckfinder-input">
+                                <input type="text" class="form-control" name="icon" id="ckfinder-input" value="{!! old('icon',isset($cate) ? $cate->icon : '') !!}">
                               </div>
                               <a id="ckfinder-popup" class="btn btn-primary col-md-1" onclick="selectFileWithCKFinder('ckfinder-input')">Browse</a>
                             </div>

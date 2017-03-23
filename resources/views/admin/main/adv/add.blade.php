@@ -6,7 +6,7 @@
     @include('block.error')
                     <div class="x_panel">
                       <div class="x_title">
-                        <h2>Thêm danh mục</h2>
+                        <h2>Thêm quảng cáo</h2>
                         <ul class="nav navbar-right panel_toolbox">
                           <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                           </li>
@@ -19,45 +19,53 @@
                         <br>
                         <form action="" method="post" class="form-horizontal form-label-left" enctype="multipart/form-data">
                             {!! csrf_field() !!}
-                          <div class="form-group">
-                              <label class="control-label col-md-3 col-sm-3 col-xs-12">Danh mục cha</label>
-                              <div class="col-md-3 col-sm-9 col-xs-12">
-                                <select class="form-control" name="parent_id">
-                                  <option value="0">Danh mục cha</option>
-                                  {!! cate_parent($cate) !!}
-                                </select>
-                              </div>
-                            </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Tên danh mục</label>
-                            <div class="col-md-3 col-sm-9 col-xs-12">
-                              <input type="text" class="form-control" name="name" placeholder="Nhập tại đây ...">
-                            </div>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Tên quảng cáo</label>
+                        <div class="col-md-3 col-sm-9 col-xs-12">
+                          <input type="text" class="form-control" name="name" placeholder="Nhập tại đây ...">
+                        </div>
                           </div>
                           <div class="form-group">
                               <label class="control-label col-md-3 col-sm-3 col-xs-12">Hình ảnh</label>
                               <div class="col-md-3 col-sm-9 col-xs-12">
-                                <input type="text" class="form-control" name="icon" id="ckfinder-input">
+                                <input type="text" class="form-control" name="image" id="ckfinder-input">
                               </div>
                               <a id="ckfinder-popup" class="btn btn-primary col-md-1" onclick="selectFileWithCKFinder('ckfinder-input')">Browse</a>
                             </div>
                             <div class="form-group">
-                              <label class="control-label col-md-3 col-sm-3 col-xs-12">Từ khóa</label>
-                              <div class="col-md-9 col-sm-9 col-xs-12">
-                                <textarea name="keywords" class="form-control" rows="3" placeholder="Nhập tại đây ..."></textarea>
+                              <label class="control-label col-md-3 col-sm-3 col-xs-12">Đường link ( URL )</label>
+                              <div class="col-md-3 col-sm-9 col-xs-12">
+                                 <input type="text" class="form-control" name="slug">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-12">Vị trí</label>
+                              <div class="col-md-3 col-sm-9 col-xs-12">
+                                 <select class="form-control" name="position">
+                                     <option value="0">Vị trí</option>
+                                     <option value="1">Banner</option>
+                                     <option value="2">Quảng cáo trên</option>
+                                     <option value="3">Quảng cáo dưới</option>
+                                 </select>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-12">Chiều rộng</label>
+                              <div class="col-md-3 col-sm-9 col-xs-12">
+                                 <input type="text" class="form-control" name="width" value="0">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-12">Chiều cao</label>
+                              <div class="col-md-3 col-sm-9 col-xs-12">
+                                 <input type="text" class="form-control" name="height" value="0">
                               </div>
                             </div>
                             <div class="form-group">
                               <label class="control-label col-md-3 col-sm-3 col-xs-12">Mô tả</label>
                                   <div class="col-md-9 col-sm-9 col-xs-12">
-                                    <textarea name="description" class="form-control" rows="3" placeholder="Nhập tại đây ..."></textarea>
+                                    <textarea name="contents" class="form-control" rows="3" placeholder="Nhập tại đây ..."></textarea>
                                   </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Hiển thị tab trang chủ</label>
-                                <div class="col-md-3 col-sm-9 col-xs-12">
-                                <input type="checkbox" name="is_tab" checked>
-                                </div>
                             </div>
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Kích hoạt</label>

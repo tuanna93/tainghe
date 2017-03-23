@@ -9,10 +9,12 @@ class PostController extends Controller
 {
     public function index(){
         $post = Post::select('*')->get();
-        return view('pages.posts.index',compact('post'));
+        return view('pages.posts.index');
     }
     public function post($pos){
         $post = Post::select('*')->where('slug','like','%'.$pos.'%')->first();
-        return view('pages.posts.detail',compact('post'));
+        $keywords = $post->keywords;
+        $description = $post->description;
+        return view('pages.posts.detail',compact('post','keywords','description'));
     }
 }

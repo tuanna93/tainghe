@@ -27,9 +27,9 @@ class MenuController extends Controller
         ]);
         $menu_slug = '';
         $menu_cate = '';
-        if($request->kieutrang == 0){
-            return redirect()->back()->with(['flash_level'=>'danger','flash_message'=>'Bạn chưa chọn kiểu trang']);
-        }
+//        if($request->kieutrang == 0){
+//            return redirect()->back()->with(['flash_level'=>'danger','flash_message'=>'Bạn chưa chọn kiểu trang']);
+//        }
         if($request->kieutrang == 2){
             $id_menu_kieutrang = $request->loadkieutrang;
             $cate = Category::where('id',$id_menu_kieutrang)->first();
@@ -63,6 +63,7 @@ class MenuController extends Controller
         $menu = new Menu();
         $menu->name = $request->name;
         $menu->slug = $menu_slug;
+        $menu->content = $request->contents;
         $menu->icon = $request->icon;
         $menu->sort_order = $request->sort_order;
         $menu->parent_id = $request->parent_id;
@@ -78,7 +79,7 @@ class MenuController extends Controller
             $menu->status = 0;
         }
         $menu->save();
-        return redirect('/admin/menu/list.html')->with(['flash_level'=>'success','flash_message'=>'Sửa menu thành công']);
+        return redirect('/admin/menu/list.html')->with(['flash_level'=>'success','flash_message'=>'Thêm menu thành công']);
     }
     public function getEdit($id){
         $parent = Menu::get();
@@ -94,9 +95,9 @@ class MenuController extends Controller
         ]);
         $menu_slug = '';
         $menu_cate = '';
-        if($request->kieutrang == 0){
-            return redirect()->back()->with(['flash_level'=>'danger','flash_message'=>'Bạn chưa chọn kiểu trang']);
-        }
+//        if($request->kieutrang == 0){
+//            return redirect()->back()->with(['flash_level'=>'danger','flash_message'=>'Bạn chưa chọn kiểu trang']);
+//        }
         if($request->kieutrang == 2){
             $id_menu_kieutrang = $request->loadkieutrang;
             $cate = Category::where('id',$id_menu_kieutrang)->first();
@@ -130,6 +131,7 @@ class MenuController extends Controller
         $menu = Menu::where('id',$id)->first();
         $menu->name = $request->name;
         $menu->slug = $menu_slug;
+        $menu->content = $request->contents;
         $menu->icon = $request->icon;
         $menu->sort_order = $request->sort_order;
         $menu->parent_id = $request->parent_id;
