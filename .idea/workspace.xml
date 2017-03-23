@@ -2,46 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47da2c26-8508-4101-9dfd-b487ac9f3455" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/main/adv/add.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/main/adv/edit.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/main/adv/list.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/pages/search.blade.php" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\tainghe\.idea\scopes\scope_settings.xml___jb_bak___" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\tainghe\resources\views\pages\intro.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\tainghe\resources\views\pages\map.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\tainghe\resources\views\pages\posts.blade.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_03_04_052231_create_menus_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_03_04_052231_create_menus_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_03_06_101100_create_image_advs_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_03_06_101100_create_image_advs_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/MenuController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MenuController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/main/cate/add.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/main/cate/add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/main/menu/add.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/main/menu/add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/main/onepage/add.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/main/onepage/add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/main/product/add.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/main/product/add.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/cart.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/cart.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/checkout.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/checkout.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/widgets/main/body/col_left.blade.php" afterPath="$PROJECT_DIR$/resources/views/widgets/main/body/col_left.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Helpers/common.php" afterPath="$PROJECT_DIR$/app/Helpers/common.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/posts/detail.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/posts/detail.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/product/detail.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/product/detail.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/widgets/main/body/product/detail.blade.php" afterPath="$PROJECT_DIR$/resources/views/widgets/main/body/product/detail.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/main/cate/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/main/cate/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/main/menu/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/main/menu/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/main/onepage/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/main/onepage/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/main/product/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/main/product/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/widgets/footer/footer_bottom.blade.php" afterPath="$PROJECT_DIR$/resources/views/widgets/footer/footer_bottom.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/widgets/footer/footer_main.blade.php" afterPath="$PROJECT_DIR$/resources/views/widgets/footer/footer_main.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/widgets/header/header_main.blade.php" afterPath="$PROJECT_DIR$/resources/views/widgets/header/header_main.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/widgets/header/header_menu.blade.php" afterPath="$PROJECT_DIR$/resources/views/widgets/header/header_menu.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/posts/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/posts/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/product/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/product/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/left_col.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/left_col.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/onepage.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/onepage.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/widgets/main/body/search.blade.php" afterPath="$PROJECT_DIR$/resources/views/widgets/main/body/search.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tainghe.iws" />
@@ -611,6 +572,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/xampp/htdocs/tainghe/resources/views/admin/main/adv/list.blade.php" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\tainghe" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
@@ -877,6 +843,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="646">
           <caret line="5" column="31" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="904">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
